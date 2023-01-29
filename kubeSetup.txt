@@ -1,0 +1,10 @@
+To create the namespaces in the kubernetes:
+	kubectl create namespace <namespace name>
+To get the namespaces in the kubernetes:
+  # to list down all the namespaces that are at present including the default ones.
+	kubectl get namespaces
+Creating a Pod in kubernetes:
+	1st step > Kind should be referred as Pod
+	2nd step > metadata must have name (can be anything of choice) and namespace should be there which is kind of a group name which is responsible for to add the required resources used by the app.
+	3rd step > Define spec under which we create the containers by giving the name of the container to be called. image (from where we are pulling the docker image of application) and ports.
+
